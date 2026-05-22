@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .gallery{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+       
+        .item{
+            min-width: 200px ;
+            height: 150px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            position: relative;
+        }
+
+
+        .item:nth-child(6){
+            grid-area: 1 / span 3 / 1 ;
+        }
+
+        .avatar{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            color: black;
+            font-size: 40px;
+            text-align: center;
+            border-radius: 50%;
+            left: 35%;
+            top: 30%;
+        }
+
+        .name{
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+
+
+        @media screen and (max-width: 600px) {
+             .gallery{
+                grid-template-columns: 1fr 1fr;
+             }
+
+             .item{
+                background-color: brown;
+             }
+             
+        }
+
+         @media screen and (max-width: 400px) {
+             .gallery{
+                grid-template-columns: 1fr;
+             }
+             
+             .item{
+                background-color: red;
+             }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="gallery">
+
+        <div class="item">
+            <div class="avatar">R</div>
+            <div class="name">Rahul</div>
+        </div>
+
+        <div class="item">
+            <div class="avatar">S</div>
+            <div class="name">Shyam</div>
+        </div>
+
+        <div class="item">
+            <div class="avatar">A</div>
+            <div class="name">Amit</div>
+        </div>
+
+        <div class="item">
+            <div class="avatar">P</div>
+            <div class="name">Priya</div>
+        </div>
+
+        <div class="item">
+            <div class="avatar">K</div>
+            <div class="name">Karan</div>
+        </div>
+
+        <div class="item">
+            <div class="avatar">M</div>
+            <div class="name">Maya</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

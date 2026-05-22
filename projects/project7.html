@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css">
+
+
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .navbar{
+            display: flex;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .nav-links{
+            display: flex;
+            padding-left: 0;
+            list-style: none;
+            gap: 10px;
+        }
+
+        .link-item a{
+            color: white;
+            text-decoration: none;
+        }
+
+
+        .brand{
+            font-weight: bold;
+            font-family: cursive;
+            font-size: 20px;
+        }
+
+        .bi-list{
+            display: none;
+        }
+
+
+
+        @media (max-width:400px){
+            .nav-links{
+                display: none;
+            }
+
+            .bi-list{
+                display: block;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <nav class="navbar">
+        
+        <div class="brand">
+            LOGO
+        </div>
+
+
+        <ul class="nav-links">
+            <li class="link-item"><a href="#">Home</a></li>
+            <li class="link-item"><a href="#">About</a></li>
+            <li class="link-item"><a href="#">Contact</a></li>
+            <li class="link-item"><a href="#">Gallery</a></li>
+        </ul>
+
+
+        <i class="bi bi-list"></i>
+    </nav>
+
+
+</body>
+</html>

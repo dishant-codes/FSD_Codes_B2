@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: rgb(7, 23, 11);
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+            margin-top: 100px;
+        }
+
+        form{
+            background-color: white;
+            width: 300px;
+            /* margin: auto; */
+            /* margin-top: 200px; */
+            padding: 20px;
+            margin-left: 25%;
+        }
+
+
+        .inputs{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+
+        .inputs > input{
+            margin-top: 5px;
+            padding: 10px;
+        }
+
+
+        .submit-btn{
+            padding: 10px 30px;
+        }
+
+        .image{
+            width: 400px;
+            height: 400px;
+            box-shadow: 3px 3px 5px rgba(36, 91, 19, 0.726);
+            position: absolute;
+            left: 50%;
+            z-index: -1;
+        }
+
+
+        .image img{
+            filter: brightness(70%);
+        }
+    </style>
+</head>
+<body>
+
+
+    <section class="container">
+        
+        <form class="form">
+            
+            <h1>Login Form</h1>
+
+            <div class="inputs">
+                <label for="uname">Username:</label>
+                 <input id="uname" type="text" placeholder="enter username">
+            </div>
+           
+            <div class="inputs">
+                <label for="pass">Password:</label>
+                <input id="pass" type="password" placeholder="enter password">
+            </div>
+            
+    
+
+            <button class="submit-btn" type="submit">Login</button>
+
+        </form>
+
+        <div class="image">
+            <img src="../spider.jpg" width="100%" height="100%">
+        </div>
+
+    </section>
+
+
+</body>
+</html>

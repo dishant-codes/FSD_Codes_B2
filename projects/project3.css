@@ -1,0 +1,72 @@
+  body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 50px;
+            position: sticky;
+            top: 0;
+            background-color: white;
+        }
+        
+
+        .brand{
+            font-size: 30px;
+            color: gray;
+            font-weight: bold;
+        }
+
+
+
+        .hero{
+            background-image: url(https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/b572b468219650dd8c8a826c/srr-min.jpg);
+            background-size: cover;
+            height: 100vh;
+            padding-top: 150px;
+            padding-left:60px;
+            padding-right: 60px;
+        }
+
+
+
+        .card{
+            background-color: white;
+            width: 400px;
+            padding: 50px 40px;
+        }
+
+        .circle{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #eb6928;
+        }
+
+
+        .card-heading{
+            font-size: 3.4rem;
+            font-weight: 300;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+
+        .card-btn{
+            background-color: #eb6928;
+            border: none;
+            color: white;
+            text-transform: uppercase;
+            padding: 20px 40px;
+            font-weight: 600;
+            margin-top: 15px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+
+        .card-btn:hover{
+            background-color: black;
+        }

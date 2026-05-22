@@ -1,0 +1,231 @@
+<!-- DOCTYPE declaration specifying this is an HTML5 document -->
+<!DOCTYPE html>
+<!-- HTML root element with English language specification -->
+<html lang="en">
+<head>
+    <!-- Character encoding for the document (UTF-8 supports all characters) -->
+    <meta charset="UTF-8">
+    <!-- Viewport meta tag for responsive design on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title displayed in browser tab -->
+    <title>Document</title>
+</head>
+<body>
+    <!-- SECTION 1: Ordered List with Alphabetic numbering (type="A") -->
+    <ol type="A">
+        <!-- List item 1: Mahendra -->
+        <li>Mahendra</li>
+        <!-- List item 2: Jeevak -->
+        <li>Jeevak</li>
+        <!-- List item 3: Sarthak -->
+        <li>Sarthak</li>
+        <!-- List item 4: Roman -->
+        <li>Roman</li>
+        <!-- List item 5: Atmatej -->
+        <li>Atmatej</li>
+    </ol>
+
+    <!-- SECTION 2: Unordered List with no bullet points (list-style: none) -->
+    <ul style="list-style: none;">
+        <!-- List item: Apple -->
+        <li>Apple</li>
+        <!-- List item: Orange -->
+        <li>Orange</li>
+        <!-- List item: Mango -->
+        <li>Mango</li>
+    </ul>
+
+    <!-- SECTION 3: Definition List for Front-end and Back-end technologies -->
+    <dl>
+        <!-- Definition term: Frontend -->
+        <dt>Frontend</dt>
+        <!-- Definition description: Frontend technologies -->
+        <dd>HTML, CSS, Javascript</dd>
+        <!-- Definition term: Backend -->
+        <dt>Backend</dt>
+        <!-- Definition description: Backend technologies -->
+        <dd>NodeJS, MongoDB</dd>
+    </dl>
+
+    <!-- Hyperlink to upGrad website that opens in a new tab -->
+    <a href="https://www.upgrad.com/" target="_blank">Link</a>
+
+    <!-- Line break element -->
+    <br>
+
+    <!-- Commented out: Local image reference (spider.jpg is not available) -->
+    <!-- <img src="spider.jpg" width="300px"/>  -->
+
+    <!-- Commented out: Marquee effect moving Spider-man image to the right (deprecated HTML tag) -->
+    <!-- <marquee direction="right">
+        <img src="https://img.freepik.com/premium-photo/spiderman-heroic-pose-with-webs-action_1199394-71910.jpg" width="200px" alt="Spider-man Image">
+    </marquee> -->
+
+    <!-- Commented out: Marquee effect moving Spider-man image upward (deprecated HTML tag) -->
+    <!-- <marquee direction="up">
+        <img src="https://img.freepik.com/premium-photo/spiderman-heroic-pose-with-webs-action_1199394-71910.jpg" width="200px" alt="Spider-man Image">
+    </marquee> -->
+
+    <!-- SECTION 4: First Table - Student Information Table -->
+
+<!-- SECTION 4: First Table - Student Information Table -->
+    <!-- Table element with border width of 2, cellpadding of 10, and no cell spacing -->
+    <table border="2" cellpadding="10" cellspacing="0">
+        <!-- Caption: Title of the table displayed above it -->
+        <caption>
+            Student Table
+        </caption>
+        <!-- Table header row with 4 columns -->
+        <tr>
+            <!-- Header cell: Serial Number -->
+            <th>Sr.No.</th>
+            <!-- Header cell: Full Name (spans 2 columns using colspan) -->
+            <th colspan="2">Full Name</th>
+            <!-- Header cell: Age -->
+            <th>Age</th>
+        </tr>
+        <!-- First data row: Raiyan Shaikh, Age 21 -->
+        <tr>
+            <!-- Serial number cell -->
+            <td>1</td>
+            <!-- First name cell -->
+            <td>Raiyan</td>
+            <!-- Last name cell -->
+            <td>Shaikh</td>
+            <!-- Age cell -->
+            <td>21</td>
+        </tr>
+        <!-- Second data row: Atmatej Sarode, Age 25 -->
+        <tr>
+            <!-- Serial number cell -->
+            <td>2</td>
+            <!-- First name cell -->
+            <td>Atmatej</td>
+            <!-- Last name cell -->
+            <td>Sarode</td>
+            <!-- Age cell (spans 2 rows downward using rowspan) -->
+            <td rowspan="2">25</td>
+        </tr>
+        <!-- Third data row: Mahendra Kathar, Age 25 (same as above due to rowspan) -->
+        <tr>
+            <!-- Serial number cell -->
+            <td>4</td>
+            <!-- First name cell -->
+            <td>Mahendra</td>
+            <!-- Last name cell -->
+            <td>Kathar</td>
+        </tr>
+        <!-- Fourth data row: Roman Shaikh, Age 22 -->
+        <tr>
+            <!-- Serial number cell -->
+            <td>3</td>
+            <!-- First name cell -->
+            <td>Roman</td>
+            <!-- Last name cell -->
+            <td>Shaikh</td>
+            <!-- Age cell -->
+            <td>22</td>
+        </tr>
+    </table>
+    
+    <!-- Center alignment for the print button -->
+    <center>
+        <!-- Button element with onclick event to trigger print dialog -->
+        <button onclick="window.print()">Print</button>
+    </center>
+
+    <!-- SECTION 5: Second Table - Seminar Schedule Table -->
+    <!-- Table element with border width of 1 -->
+    <table border="1">
+        <!-- Table header section -->
+        <thead>
+            <!-- Header row with main title spanning 4 columns -->
+            <tr>
+                <!-- Header cell: Seminar title (spans 4 columns) -->
+                <th colspan="4">Seminar</th>
+            </tr>
+            <!-- Subheader row defining the schedule columns -->
+            <tr>
+                <!-- Header cell: Day (spans 4 rows downward) -->
+                <th rowspan="4">Day</th>
+                <!-- Header cell: Schedule (spans 2 columns for Begin and End times) -->
+                <th colspan="2">Schedule</th>
+                <!-- Header cell: Topic -->
+                <th>Topic</th>
+            </tr>
+            <!-- Additional header row specifying time columns -->
+            <tr>
+                <!-- Header cell: Begin time -->
+                <th>Begin</th>
+                <!-- Header cell: End time -->
+                <th>End</th>
+                <!-- Empty header cell (placeholder) -->
+                <th></th>
+            </tr>
+        </thead>
+        <!-- Table body section with schedule data -->
+        <tbody>
+            <!-- Monday schedule row -->
+            <tr>
+                <!-- Day: Monday -->
+                <td>Monday</td>
+                <!-- Begin time: 8:00 a.m. -->
+                <td>8:00 a.m.</td>
+                <!-- End time: 5:00 p.m. -->
+                <td>5:00 p.m.</td>
+                <!-- Topic: Introduction to XML with line break and additional info -->
+                <td>Introduction to XML<br>Validity: DTD and Relax NG</td>
+            </tr>
+            <!-- Tuesday schedule row (part 1) -->
+            <tr>
+                <!-- Day: Tuesday (spans 3 rows downward) -->
+                <td rowspan="3">Tuesday</td>
+                <!-- Begin time: 8:00 a.m. -->
+                <td>8:00 a.m.</td>
+                <!-- End time: 11:00 a.m. -->
+                <td>11:00 a.m.</td>
+                <!-- Topic: XPath -->
+                <td>XPath</td>
+            </tr>
+            <!-- Tuesday schedule row (part 2) -->
+            <tr>
+                <!-- Begin time: 11:00 a.m. -->
+                <td>11:00 a.m.</td>
+                <!-- End time: 2:00 p.m. -->
+                <td>2:00 p.m.</td>
+                <!-- Topic: XSL Transformations (spans 2 rows downward) -->
+                <td rowspan="2">XSL Transformations</td>
+            </tr>
+            <!-- Tuesday schedule row (part 3) -->
+            <tr>
+                <!-- Begin time: 2:00 p.m. -->
+                <td>2:00 p.m.</td>
+                <!-- End time: 5:00 p.m. -->
+                <td>5:00 p.m.</td>
+            </tr>
+            <!-- Wednesday schedule row -->
+            <tr>
+                <!-- Day: Wednesday -->
+                <td>Wednesday</td>
+                <!-- Begin time: 8:00 a.m. -->
+                <td>8:00 a.m.</td>
+                <!-- End time: 12:00 p.m. -->
+                <td>12:00 p.m.</td>
+                <!-- Topic: XSL Formatting Objects -->
+                <td>XSL Formatting Objects</td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+    <!-- Closing body tag -->
+</body>
+<!-- Closing HTML tag -->
+</html>
+
+
+
+
+    
+</body>
+</html>

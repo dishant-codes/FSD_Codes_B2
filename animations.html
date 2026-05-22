@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .container-1, .container-2{
+            border: 2px solid black;
+            width: 400px;
+            height: 300px;
+            margin-top: 50px;
+        }
+
+        .circle, .circle-2{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 50%;
+            transition: all 0.4s;
+        }
+
+
+        .container-1:hover .circle{
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+            background-color: black;
+        }
+
+
+
+        .circle-2{
+            /* animation-name: bouncingBall;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            animation-timing-function: Fast Out, Linear In; */
+
+            animation: bouncingBall 3s infinite forwards Fast our, linear In;
+        }
+
+
+        
+
+        @keyframes bouncingBall{
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(300px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container-1">
+        <div class="circle"></div>
+    </div>
+
+
+    <div class="container-2">
+        <div class="circle-2"></div>
+    </div>
+
+
+</body>
+</html>

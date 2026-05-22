@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-image: url(./space.jpg);
+            background-size: cover;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+
+
+        .earth{
+            height: 300px;
+            width: 300px;
+            background-image: url(./earth.png);
+            background-size: cover;
+        }
+
+        .moon{
+            height: 150px;
+            width: 150px;
+            background-image: url(https://purepng.com/public/uploads/medium/purepng.com-moonmoonastronomical-bodyfifth-largest-natural-satellitenatural-satellitemoon-light-1411527067371obkao.png);
+            background-size: cover;
+            position: absolute;
+            animation: 10s moonRotation linear infinite;
+        }
+
+
+        @keyframes moonRotation{
+
+            0%{
+                transform: translateX(-300%) scale(0.5);
+                
+            }
+
+
+            50%{
+                transform: translateX(300%) scale(1);
+            }
+            
+
+            100%{
+                transform: translateX(-300%) scale(0.5);
+                z-index: -1;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    
+
+
+    <div class="earth"></div>
+    <div class="moon"></div>
+
+    
+</body>
+</html>

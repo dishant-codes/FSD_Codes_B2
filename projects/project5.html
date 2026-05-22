@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+        body{
+            background-image: url(https://static.vecteezy.com/system/resources/previews/004/877/847/non_2x/rural-road-with-scenic-view-of-the-reservoir-huay-tueng-tao-with-mountain-range-forest-at-evening-sunset-in-chiang-mai-thailand-free-photo.jpg);
+            background-size: cover;
+        }
+
+
+        .car{
+            background-image: url("https://www.pngkey.com/png/full/184-1846290_volkswagen-golf-company-car-side-view-volkswagen-golf.png");
+            width: 400px;
+            height: 150px;
+            background-size: cover;
+            position: absolute;
+            bottom: 50px;
+            animation: drive 7s linear infinite;
+        }
+
+
+        @keyframes drive{
+            from{
+                transform: translateX(-150%);
+            }
+
+            to{
+                transform: translateX(500%);
+            }
+        }
+
+
+        .wheel{
+            background-image: url(../wheel.gif);
+            background-size: cover;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+        }
+
+        .wheel:nth-child(1){
+            bottom: 9px;
+            left: 43px;
+        }
+
+        .wheel:nth-child(2){
+            bottom: 9px;
+            right: 40px;
+        }
+
+
+        img{
+            position: absolute;
+            transform: rotateY(180deg);
+            bottom: 50px;
+            animation: deer 10s linear infinite;
+        }
+
+
+
+        @keyframes deer{
+            from{
+                /* transform: rotateY(180deg), translateX(50%); */
+                left: 0;
+            }
+            to{
+                left: 400%;
+                /* transform: rotateY(180deg), translateX(500%); */
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="car">
+        <div class="wheel"></div>
+        <div class="wheel"></div>
+    </div>
+
+
+    <img src="https://img1.picmix.com/output/stamp/normal/2/6/9/2/1802962_2a7a2.gif" width="200px" alt="">
+
+    
+</body>
+</html>

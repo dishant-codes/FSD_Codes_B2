@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css">
+
+
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+
+        .bi-whatsapp{
+            background-color: #25D366;
+            color: white;
+            padding: 14px 15px;
+            border-radius: 50%;
+            font-size: 50px;
+            margin-top: 20px;
+            display: inline-block;
+            position: relative;
+        }
+
+
+
+        .bi-whatsapp::after{
+            content: ' ';
+            position: absolute;
+            background-color: #25D366;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            left: 10px;
+            animation: blink 2s linear infinite;
+            z-index: -1;
+        }
+
+
+        @keyframes blink{
+            from {
+                 transform: scale(1);
+            }
+
+            to{
+                transform: scale(3);
+                opacity: 0;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+    <a target="_blank" href="https://wa.me/918788233512?text=Hello Dishant">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+    
+
+</body>
+</html>
