@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       html{
+        margin: 10px;
+         border-left: 1px solid black;
+       }
+
+       body{
+            margin: 10px;
+                border-left: 2px solid black;
+       }
+        /* Visual DOM tree styles */
+        .dom-tree{font-family: Arial, sans-serif; margin-top:20px}
+        .dom-tree ul{list-style:none; margin:0; padding-left:20px; position:relative}
+        .dom-tree ul::before{content:''; border-left:1px dashed #666; position:absolute; left:8px; top:0; bottom:0}
+        .dom-tree li{margin:6px 0; padding-left:12px; position:relative}
+        .node{display:inline-block; background:#f3f3f3; border:1px solid #ccc; padding:2px 6px; border-radius:4px}
+        .node .tag{color:#0066cc; font-weight:600}
+        .node .attrs{color:#999; font-size:12px; margin-left:6px}
+
+    </style>
+</head>
+<body>
+
+    <h1>This Heading</h1>
+    
+        <!-- Visual DOM tree representation -->
+        <div class="dom-tree" aria-label="DOM tree">
+            <ul>
+                <li><span class="node"><span class="tag">&lt;html&gt;</span></span>
+                    <ul>
+                        <li><span class="node"><span class="tag">&lt;head&gt;</span></span>
+                            <ul>
+                                <li><span class="node"><span class="tag">&lt;meta&gt;</span> <span class="attrs">charset="UTF-8"</span></span></li>
+                                <li><span class="node"><span class="tag">&lt;meta&gt;</span> <span class="attrs">name="viewport"</span></span></li>
+                                <li><span class="node"><span class="tag">&lt;title&gt;</span></span></li>
+                                <li><span class="node"><span class="tag">&lt;style&gt;</span></span></li>
+                            </ul>
+                        </li>
+                        <li><span class="node"><span class="tag">&lt;body&gt;</span></span>
+                            <ul>
+                                <li><span class="node"><span class="tag">&lt;h1&gt;</span> <span class="attrs">This Heading</span></span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+   
+</body>
+</html>
