@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      table {
+        border: 1px solid black;
+      }
+      td {
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="parent" cellspacing="10px">
+      <tr id="child">
+        <td id="grandChild">Home</td>
+      </tr>
+    </table>
+
+    <ul id="list">
+      <li>Red</li>
+      <li>Orange</li>
+      <li>Blue</li>
+      <li>Pink</li>
+    </ul>
+
+    <script>
+
+    //   document.querySelectorAll("li").forEach(function (li) {
+    //     li.addEventListener("click", function () {
+    //       console.log(li.textContent);
+    //     });
+    //   });
+
+
+    // document.addEventListener("click",(e)=>{
+    //     console.log(e.target.tagName);
+        
+    // })
+
+
+    document.getElementById("list").addEventListener("click", function(e){
+        
+        if(e.target.tagName === "LI"){
+            console.log(e.target.textContent);
+            document.body.style.backgroundColor = e.target.textContent;
+        }
+    })
+
+
+    //   let parent = document.getElementById("parent");
+    //   let child = document.getElementById("child");
+    //   let grandChild = document.getElementById("grandChild");
+
+    //   child.addEventListener("click", function (event) {
+    //     event.stopPropagation();
+    //     alert("child clicked");
+    //   });
+
+    //   parent.addEventListener("click", function (event) {
+    //     alert("parent clicked");
+    //   });
+    </script>
+  </body>
+</html>
