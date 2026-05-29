@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        
+        function displayer(val){
+            document.write("Your Value is :"+val);
+        }
+
+
+        function myHandler(callback){
+            alert("Hello Guys");
+            let data = "Dishant";
+            callback(data);
+        }
+
+
+        myHandler(displayer);
+
+    </script>
+    
+</body>
+</html>

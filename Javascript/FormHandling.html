@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #nameErr, #emailErr, #phoneErr, #genderErr, #passErr, #cpassErr{
+            color: red;
+            font-size: 10px;
+        }
+        .error-input {
+            border: 2px solid red !important;
+            background-color: #ffe6e6;
+        }
+        .success-input {
+            border: 2px solid green !important;
+            background-color: #e6ffe6;
+        }
+    </style>
+</head>
+<body>
+    
+    <form id="form">
+        <label>Full Name</label>
+        <input id="fname" type="text" placeholder="enter full name"> <span id="nameErr"></span>
+        <br><br>
+        <label>Email</label>
+        <input id="email" type="email" placeholder="Enter email id"> <span id="emailErr"></span>
+        <br><br>
+        <label>Phone No.</label>
+        <input id="phone" type="text" placeholder="enter phone number"> <span id="phoneErr"></span>
+        <br><br>
+        <label>Gender</label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
+        <input type="radio" name="gender" value="Other">Other <span id="genderErr"></span>
+        <br><br>
+        <label>Password</label>
+        <input id="passwd" type="password" placeholder="Enter password"> <span id="passErr"></span>
+        <br><br>
+        <label>Confirm Password</label>
+        <input id="cpasswd" type="password" placeholder="Confirm password"> <span id="cpassErr"></span>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+
+    <script>
+
+        const form = document.getElementById("form");
+        const fname = document.querySelector("#fname");
+        const email = document.querySelector("#email");
+        const phone = document.querySelector("#phone");
+        const pass = document.querySelector("#passwd");
+        const cpass = document.querySelector("#cpasswd");
+
+        form.addEventListener("submit",function(event){
+            event.preventDefault();
+            
+                                                        //      condition     ?       true         :    false
+            document.querySelector("#nameErr").innerHTML = fname.value == "" ? "Full name is required" : "";
+            document.querySelector("#emailErr").innerHTML = email.value == "" ? "Email is required" : "";
+            document.querySelector("#phoneErr").innerHTML = phone.value == "" ? "Phone number is required" : "";
+            
+
+            if(pass.value.length < 6){
+                document.querySelector("#passErr").innerHTML = "Enter atleast 6 character";
+            }
+            else{
+                document.querySelector("#passErr").innerHTML = "";
+            }
+
+
+            if(pass.value != cpass.value){
+                document.querySelector("#cpassErr").innerHTML = "password not matched";
+            }
+            else{
+                document.querySelector("#cpassErr").innerHTML = "";
+            }
+
+
+            if(phone.value.length != 10){
+                 document.querySelector("#phoneErr").innerHTML = "phone number required 10 digits";
+            }
+            else{
+               
+
+                if(isNaN(phone.value)){
+                     document.querySelector("#phoneErr").innerHTML = "only digits are allowed";
+                }
+                else{
+                     document.querySelector("#phoneErr").innerHTML = "";
+                }
+
+
+            }
+
+        })
+
+    </script>
+
+</body>
+</html>
