@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let str = "Dishant";
+
+        document.write(str);
+
+
+        let temp = "";
+
+        for(let i = str.length-1; i >=0; i--){
+            temp += str[i];
+        }
+
+        document.write("<br>")
+        document.write(temp)
+
+
+        let rev = str.split('').reverse().join('');
+
+        console.log(rev)
+
+
+
+        let list = "Dishant, Jeevak, Khaled, Raiyan, Mahendra, Raman";
+
+        console.log(list.split(',').reverse().join());
+        
+    </script>
+    
+</body>
+</html>
